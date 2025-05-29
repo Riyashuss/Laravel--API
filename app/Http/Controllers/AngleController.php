@@ -84,7 +84,7 @@ class AngleController extends Controller
                 'stop' => 'sometimes|int|in:0,1', 
             ]);
     
-            // If 'stop' is clicked (i.e., sent as 1), set all directions to 0 and stop to 0
+
             if (isset($validatedData['stop']) && $validatedData['stop'] == 1) {
                 $validatedData['up'] = 0;
                 $validatedData['down'] = 0;
